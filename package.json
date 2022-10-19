@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "inquirer": "^8.2.4"
+  },
+  "name": "employee-roster",
+  "version": "1.0.0",
+  "main": "employee.js",
+  "devDependencies": {
+    "jest": "^29.2.0"
+  },
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mimimoha/employee-roster.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mimimoha/employee-roster/issues"
+  },
+  "homepage": "https://github.com/Mimimoha/employee-roster#readme",
+  "description": ""
+}
