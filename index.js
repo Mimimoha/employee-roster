@@ -9,7 +9,7 @@ const html = require('./utils/generatehtml')
 
 
 
-function createmanager() {
+function managerPrompt() {
     console.log("please enter manager information")
 
     inquirer
@@ -44,11 +44,11 @@ function createmanager() {
             teamarry.push(manager)
 
             console.log(teamarry)
-            newmember()
+            newEmployee()
         });
 }
 
-function createengineer() {
+function engineerPrompt() {
 
     inquirer
         .prompt([
@@ -82,11 +82,11 @@ function createengineer() {
             teamarry.push(engineer)
 
             console.log(teamarry)
-            newmember()
+            newEmployee()
         });
 }
 
-function createintern() {
+function internPrompt() {
 
     inquirer
         .prompt([
@@ -118,11 +118,11 @@ function createintern() {
             teamarry.push(intern)
 
             console.log(teamarry)
-            newmember()
+            newEmployee()
         });
 }
 
-function newmember() {
+function newEmployee() {
     inquirer
         .prompt([
             {
@@ -134,13 +134,13 @@ function newmember() {
         ])
         .then((response) => {
             if (response.newmember === 'manager') {
-                createmanager()
+               managerPrompt()
             }
             if (response.newmember === 'engineer') {
-                createengineer()
+                engineerPrompt()
             }
             if (response.newmember === 'intern') {
-                createintern()
+                internPrompt()
             }
             else {
                 console.log("team member created!!")
@@ -149,7 +149,7 @@ function newmember() {
         })
 }
 
- createmanager()
+managerPrompt()
 
 function buildteam() {
     fs.writeFileSync('./dist/index.html', html(teamarry))
