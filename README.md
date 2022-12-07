@@ -29,7 +29,7 @@ Employee Roster application accepts the following user input:
 - When user decides to finish building my team, they must choose the 'none' option. Then a HTML is generated with all the employee information. 
 
 ## Walkthrough video
-please click this [Walkthough video](https://github.com/Mimimoha/readme-generator/blob/main/Readme%20demenstration%20.mp4) link to watch the video. 
+please click this [Walkthough video](https://github.com/Mimimoha/employee-roster/blob/main/employee-roster-demo.mp4) link to watch the video. 
 
 ## Test 
 Please use the [jest package](https://jestjs.io/) to run the tests.
